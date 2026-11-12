@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DAM-ProgramacionMultimediaYDispositivosMoviles"
 include(":app")
+include(":RA2:practica1")
