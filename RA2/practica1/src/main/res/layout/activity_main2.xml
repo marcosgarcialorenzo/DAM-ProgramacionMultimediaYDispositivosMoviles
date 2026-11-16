@@ -3,11 +3,133 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:gravity="center_vertical"
+        android:padding="16dp">
 
+    <!-- 1. TextView + 3 EditText -->
     <TextView
-            android:id="@+id/tvResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp" />
+            android:text="Feedback"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+    <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+    <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number" />
+
+    <!-- 2. TextView + 3 CheckBox -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cuándo juegas" />
+
+    <CheckBox
+            android:id="@+id/cbManana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mañanas" />
+
+    <CheckBox
+            android:id="@+id/cbTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tardes" />
+
+    <CheckBox
+            android:id="@+id/cbNoche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noches" />
+
+    <!-- 3. TextView + RadioGroup con 2 RadioButton -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Género" />
+
+    <RadioGroup
+            android:id="@+id/rgGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/rbHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hombre" />
+
+        <RadioButton
+                android:id="@+id/rbMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mujer" />
+    </RadioGroup>
+
+    <!-- 4. TextView + Switch -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="¿Repetirías?" />
+
+    <Switch
+            android:id="@+id/swRepetir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <!-- 5. TextView + RatingBar -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Valoración" />
+
+    <RatingBar
+            android:id="@+id/rbValoracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1" />
+
+    <!-- 6. TextView + SeekBar -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="¿Lo recomendarías? (0-100)" />
+
+    <SeekBar
+            android:id="@+id/sbRecomendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+    <!-- 7. Botón volver -->
+    <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Volver" />
 </LinearLayout>
