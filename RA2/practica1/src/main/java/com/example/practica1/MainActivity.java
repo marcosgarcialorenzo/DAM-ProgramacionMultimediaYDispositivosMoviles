@@ -1,5 +1,6 @@
 package com.example.practica1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -25,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
         miAnimacion.setRepeatMode(Animation.RESTART);
         miAnimacion.setRepeatCount(Animation.INFINITE);
         tvGameOver.startAnimation(miAnimacion);
+
+        btnFeedback.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(intent);
+        });
     }
 }
