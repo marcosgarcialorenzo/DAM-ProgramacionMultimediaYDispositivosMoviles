@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Clear" android:id="@+id/menu1" />
+    <item android:title="Memoria" android:id="@+id/menu2" >
+        <menu>
+            <item android:id="@+id/menu2_0" android:title="Añadir a memoria"/>
+            <item android:id="@+id/menu2_1" android:title="Memoria_+"/>
+            <item android:id="@+id/menu2_2" android:title="Memoria_-"/>
+            <item android:id="@+id/menu2_3" android:title="Memoria_C"/>
+        </menu>
+    </item>
+</menu>
